@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>洪珮榕 | 个人主页</title>
+  <meta name="description" content="洪珮榕的个人主页——教育背景、实习经历、活动足迹、荣誉与工作成果全览">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 动态渐变背景 -->
+  <div class="bg-gradient" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- 导航 -->
+  <nav class="nav" id="nav">
+    <a class="nav-logo" href="#hero">HPJ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">关于我</a></li>
+      <li><a href="#education">教育背景</a></li>
+      <li><a href="#experience">实习经历</a></li>
+      <li><a href="#activities">活动足迹</a></li>
+      <li><a href="#honors">荣誉奖项</a></li>
+      <li><a href="#works">成果展示</a></li>
+      <li><a href="#skills">技能证书</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-inner reveal">
+      <div class="hero-avatar" id="avatarWrap">
+        <img id="avatar" src="assets/avatar.jpg" alt="个人照片"
+             onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex'">
+        <div class="avatar-fallback" id="avatarFallback">洪</div>
+      </div>
+      <p class="hero-hello">你好，我是</p>
+      <h1 class="hero-name">洪珮榕</h1>
+      <p class="hero-en">HUNG PEI-JUNG</p>
+      <p class="hero-tagline" id="tagline"></p>
+      <div class="hero-contact" id="contactBtns"></div>
+      <div class="hero-scroll" aria-hidden="true"><span></span></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 关于我 -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>关于我</h2>
+      </div>
+      <div class="about-grid" id="aboutGrid"></div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section class="section" id="education">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>教育背景</h2>
+      </div>
+      <div class="edu-grid" id="eduGrid"></div>
+    </section>
+
+    <!-- 实习经历 -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>实习经历</h2>
+      </div>
+      <div class="timeline" id="expTimeline"></div>
+    </section>
+
+    <!-- 活动足迹 -->
+    <section class="section" id="activities">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>活动足迹</h2>
+      </div>
+      <p class="section-note reveal">参与过的校园与社会活动，扫码可见图文与视频记录</p>
+      <div class="card-grid" id="actGrid"></div>
+    </section>
+
+    <!-- 荣誉奖项 -->
+    <section class="section" id="honors">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2>荣誉奖项</h2>
+      </div>
+      <div class="honor-list" id="honorList"></div>
+    </section>
+
+    <!-- 成果展示 -->
+    <section class="section" id="works">
+      <div class="section-head reveal">
+        <span class="section-num">06</span>
+        <h2>成果展示</h2>
+      </div>
+      <p class="section-note reveal">工作中产出的报告、思维导图与方案文件（已做脱敏处理）</p>
+      <div class="work-grid" id="workGrid"></div>
+    </section>
+
+    <!-- 技能证书 -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-num">07</span>
+        <h2>技能与证书</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>洪珮榕 · 感谢你的浏览</p>
+    <p class="footer-contact" id="footerContact"></p>
+  </footer>
+
+  <!-- 图片放大查看 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭">&times;</button>
+    <img id="lightboxImg" src="" alt="预览大图">
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
